@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkastrology_website=self.webpackChunkastrology_website||[]).push([[837],{837:(s,e,o)=>{o.r(e),o.d(e,{default:()=>t});o(43);var r=o(579);const t=()=>(0,r.jsxs)("div",{children:[(0,r.jsx)("h2",{children:"Consult an Astrologer"}),(0,r.jsx)("p",{children:"Get expert astrology consultations from professional astrologers via chat or video call."})]})}}]);
+//# sourceMappingURL=837.9bb7fae5.chunk.js.map

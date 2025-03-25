@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* transition: background 0.3s ease-in-out, color 0.3s ease-in-out; */
+  background-color: white; /* Light mode default */
+  color: black;
+}
+/* ✅ Light Mode (Default) */
+/* ✅ Light Mode (Default) */
+/* Light Mode (Default) */
+body {
+  background-color: white;
+  color: black;
+  transition:  background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+.dark {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+/* Optional: Add dark mode styles for buttons, text, etc. */
+.dark .button {
+  background: linear-gradient(45deg, #6b47dc, #ff6b6b);
+  color: white;
+}
+
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(135deg, #ff6b6b, #6b47dc);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #fddb92;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+}
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(135deg, #6b47dc, #ff6b6b);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Home Page Styles */
+.home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home h2 {
+  font-size: 36px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #ff6b6b, #fddb92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff6b6b, #6b47dc);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #fddb92, #ff6b6b);
+}
+
+/* Add animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ✅ Zodiac Wheel Container */
+.wheel-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ The Spinning Wheel */
+.zodiac-wheel {
+  width: 100%;
+  height: 100%;
+  transition: transform 3s ease-in-out;
+  filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.8));
+}

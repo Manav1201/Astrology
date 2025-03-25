@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkastrology_website=self.webpackChunkastrology_website||[]).push([[357],{357:(s,t,e)=>{e.r(t),e.d(t,{default:()=>r});e(43);var o=e(579);const r=()=>(0,o.jsxs)("div",{children:[(0,o.jsx)("h2",{children:"AI Astrology Chat"}),(0,o.jsx)("p",{children:"Chat with our AI-powered astrology assistant for instant horoscope predictions."})]})}}]);
+//# sourceMappingURL=357.11b61146.chunk.js.map

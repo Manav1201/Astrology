@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Website</title>
+
+    <!-- ✅ Prevent White Flashing Before Styles Load -->
+    <script>
+        (function () {
+            let isDark = localStorage.getItem("theme") === "dark";
+            if (isDark) {
+                document.documentElement.classList.add("dark");
+                document.documentElement.style.backgroundColor = "#1a1a2e"; // Dark mode background immediately
+            } else {
+                document.documentElement.classList.remove("dark");
+                document.documentElement.style.backgroundColor = "white"; // Light mode background immediately
+            }
+        })();
+    </script>
+
+    <!-- ✅ Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- ✅ Tailwind Dark Mode Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class", // Ensures Tailwind applies dark mode manually
+            theme: { extend: {} }
+        };
+    </script>
+
+</head>
+
+<!-- ✅ Smooth Dark Mode Transitions -->
+<body class="transition-all duration-300 bg-white dark:bg-gray-900 text-black dark:text-white">
+    <div id="root"></div> <!-- React will mount here -->
+</body>
+</html>
