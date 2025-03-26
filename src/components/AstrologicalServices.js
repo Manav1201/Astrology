@@ -6,7 +6,7 @@ const services = [
   { title: "Today's Horoscope", icon: <FaStar />, image: "https://source.unsplash.com/300x200/?horoscope,astrology", description: "Get daily predictions and insights about your zodiac sign.", link: "#" },
   { title: "Free Kundli", icon: <FaBook />, image: "https://source.unsplash.com/300x200/?book,astrology", description: "Generate a free online Kundli report to predict your future.", link: "#" },
   { title: "Compatibility", icon: <FaHandSparkles />, image: "https://source.unsplash.com/300x200/?love,relationship", description: "Check compatibility with your partner for a lasting relationship.", link: "#" },
-  { title: "Festival 2025", icon: <FaUserAstronaut />, image: "https://source.unsplash.com/300x200/?festival,celebration", description: "Discover the spiritual significance of upcoming festivals.", link: "#" },
+  { title: "Festival 2025", icon: <FaUserAstronaut />, image: "https://source.unsplash.com/300x200/?festival,celebration", description: "Discover the spiritual significance of upcoming festivals.", link: "/festival-calendar"},
   { title: "Kundli Matching", icon: <FaChartLine />, image: "https://source.unsplash.com/300x200/?wedding,match", description: "Find the perfect life partner through accurate Kundli matching.", link: "#" },
   { title: "Astrological Guidance", icon: <FaPhone />, image: "https://source.unsplash.com/300x200/?consultation,help", description: "Get personalized astrology guidance from expert astrologers.", link: "#" },
 ];
