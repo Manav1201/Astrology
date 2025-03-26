@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import KundliMatch from "./components/KundliMatch"; // ✅ Import the Kundli Match Component
 
 import Footer from "./components/Footer";
+import FestivalCalendar from "./components/FestivalCalendar";
 import Review from "./components/Review"; // ✅ Import the Review Page
 
 const Home = lazy(() => import("./components/Home"));
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/ai-chat" element={<AIChat />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/festival-calendar" element={<FestivalCalendar />} />
           <Route path="/kundli-match" element={<KundliMatch />} />
 
           <Route path="*" element={<NotFound />} />

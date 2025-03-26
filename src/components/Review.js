@@ -2,15 +2,17 @@ import React, { useState } from "react";
 
 const Review = () => {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState(""); // Added email state
   const [review, setReview] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name && review) {
+    if (name && email && review) {
       setSubmitted(true);
       setTimeout(() => setSubmitted(false), 3000);
       setName("");
+      setEmail("");
       setReview("");
     }
   };
@@ -40,6 +42,18 @@ const Review = () => {
               onChange={(e) => setName(e.target.value)}
               className="w-full px-4 py-3 bg-gray-800 text-white border border-gray-600 rounded-lg focus:outline-none 
               focus:ring-2 focus:ring-yellow-400 transition"
+              required
+            />
+
+            {/* Email Input */}
+            <input
+              type="email"
+              placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-4 py-3 bg-gray-800 text-white border border-gray-600 rounded-lg focus:outline-none 
+              focus:ring-2 focus:ring-yellow-400 transition"
+              required
             />
 
             {/* Review Input */}
@@ -49,6 +63,7 @@ const Review = () => {
               onChange={(e) => setReview(e.target.value)}
               className="w-full h-28 px-4 py-3 bg-gray-800 text-white border border-gray-600 rounded-lg focus:outline-none 
               focus:ring-2 focus:ring-yellow-400 transition"
+              required
             ></textarea>
 
             {/* Submit Button */}
